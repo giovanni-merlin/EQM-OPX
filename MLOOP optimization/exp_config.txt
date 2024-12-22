@@ -1,0 +1,25 @@
+#Differential Evolution Complete Options
+#---------------------------------------
+
+#General options
+#max_num_runs = 1000                       #maximum number of runs
+#target_cost = -250000                        #cost to beat
+#max_num_runs_without_better_params = 50   #maximum number of runs without finding better parameters
+
+#Differential evolution controller options
+controller_type = 'differential_evolution'
+num_params = 1                         #number of parameters
+min_boundary = [50000]              #minimum boundary
+max_boundary = [300000]               #maximum boundary
+param_names = ['cooler_rf']               #names for parameters
+#trust_region = 0.2              #maximum move distance from best params, TO USE IF THE EXPERIMENTS HAS BAD RESULTS FOR VERY DIFF PARAMETERS
+first_params = None                    #first parameters to try if None a random set of parameters is chosen
+evolution_strategy = 'best1'           #evolution strategy can be 'best1', 'best2', 'rand1' and 'rand2'. Best uses the best point, rand uses a random one, the number indicates the number of directions added.
+population_size = 10                   #a multiplier for the population size of a generation
+mutation_scale = (0.75, 1.5)            #the minimum and maximum value for the mutation scale factor. Each generation is randomly selected from this. Each value must be between 0 and 2.
+cross_over_probability = 0.5           #the probability a parameter will be resampled during a mutation in a new generation
+restart_tolerance = 0.02               #the fraction the standard deviation in the costs of the population must reduce from the initial sample, before the search is restarted.
+
+#filename of the learner archive, can include path
+learner_archive_filename = 'DE_learn_n=10_cost=250000_pop=10_mut=(0.5,1)_cr=0.7.txt'
+controller_archive_filename = 'DE_contr_n=10_cost=250000_pop=10_mut=(0.5,1)_cr=0.7.txt'
