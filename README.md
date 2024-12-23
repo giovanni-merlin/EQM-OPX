@@ -1,7 +1,9 @@
 # EQM-OPX
-Author(s): Giovanni Merlin - giovanni.merlin@studenti.unipd.it
-Version: 1
-Date: 19/12/2024
+Authors: \
+Giovanni Merlin - giovanni.merlin@studenti.unipd.it \
+Amar Bellahsene - amar.bellahsene@etu.unistra.fr \
+Version: 1 \
+Date: 19/12/2024 
 
 Repository for the OPX+ control at EQM Lab (Prof. S. Whitlock, University of Strasbourg).
 
