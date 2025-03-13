@@ -12,4 +12,4 @@ and the possible combinations.
 
 To run the optimization, first modify the "exp_config.txt" file, specifying the optimization parameters.
 Then run both the OPX notebook and the "read_image_mloop" notebook, which reads the images produced by the experiment and produce a file named "exp_output.txt". Then run MLOOP from the command line: move to the directory in which the scripts are running and type "m-loop".
-Make sure that no previous file named "exp_input.txt" is present in the directory, otherwise it will not trigger the detectino ofa newly created one.
+Make sure that no previous file named "exp_input.txt" is present in the directory, otherwise it will not trigger the detection of a newly created one.
